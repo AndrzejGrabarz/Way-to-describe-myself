@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Forms/Forms_Projects/Form_1/style_contact.css">
+    <link href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <title>NFT.V2</title>
+</head>
+<body>
+    
+    
+
+    <div class="container">
+
+        <h1>Contact form</h2>
+        <div class="form">
+            
+            <div class="inside">
+                
+                <div class="left-side">
+
+                    <div class="label"> Your name* </div>
+                    <div class="label"> Your Email* </div>
+                    <div class="label"> Phone* </div>
+                    <div class="label"> Message Subject* </div>
+                    <div class="label label_mess"> Message* </div>
+                    <div class="label label_ver"> Veryfication* </div>
+
+                </div>
+
+                
+                <div class="right-side">
+
+                    <div class="right">
+                    <input class="content" type="text" id="imie" placeholder="Name" required> <input class="content" type="text" id="nazwisko" placeholder="Surname" required> 
+                    </div>
+
+                    <div class="right">
+                    <input class="content" type="text" placeholder="Email" required> 
+                    </div>
+
+                    <div class="right">
+                    <input class="content" type="tel" min="1" max="9" maxlength="3" placeholder="###"> <input class="content" type="tel" min="1" max="9" maxlength="3" placeholder="###"> <input class="content" type="tel" min="1" max="9" maxlength="3" placeholder="###"> 
+                    </div>
+
+                    <div class="right"> 
+                    <select id="dropdown" name="role-name" class="content" required>
+                        <option disabled selected hidden value="">Select type issue</option>
+                        <option value="Idea">Idea</option>
+                        <option value="Complaint">Complaint</option>
+                        <option value="Praise">Praise</option>
+                        <option value="Wallet issue">Wallet issue</option>
+                        <option value="Website issue">Website issue</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    </div>
+
+
+                    <div class="right">   
+                        <textarea class="textarea"></textarea> 
+                    </div>
+
+                    <div class="right"> 
+                        <div class="g-recaptcha margin"
+                        data-sitekey="6Le-wvkSAAAAAPBMRTvw0Q4Muexq9bi0DJwx_mJ-"></div>
+                    </div>
+                </div>
+                
+              
+                
+            </div>
+            <hr class="horizon">
+            <div class="second-part">
+
+                
+                    
+                
+                    <input class="button" type="submit" value=" Submit">
+                
+
+            </div>
+            
+        </div>
+
+    </div>
+    
+    
+
+
+    
+
+<script src="/Free_NFT/Js/skill.js"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+</html>
