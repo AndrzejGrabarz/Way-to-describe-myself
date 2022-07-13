@@ -15,20 +15,23 @@
     <div class="container">
 
         <div class="left_side">
-            <img src="krajobraz.png" alt="">
+            <img src="space.jpg" alt="">
         </div>
 
         <div class="right_side">
 
             <div class="title"><h2>Sign up</h2></div>
             <div class="form-col">
-                <div class="place"><input type="text" placeholder="text"></div>
-                <div class="place"><input type="text" placeholder="text"></div>
-                <div class="place"><input type="text" placeholder="text"></div>
-                <div class="place"><input type="text" placeholder="text"></div>
-                <div class="place"><input type="text" placeholder="text"></div>
-                <div class="place"><input type="text" placeholder="text"></div>
+                <div class="place"><p>First name</p><input class="info" type="text" id="name" name="name" placeholder="Mariusz" required></div>
+                <div class="place"><p>Last name</p><input class="info" type="text" id="lastname" name="lastname" placeholder="Bocian" required></div>
+                <div class="place"><p>Phone</p><input class="info" type="tel" min="1"  max="9" maxlength="9" placeholder="### ### ###" required></div>
+                <div class="place"><p>Email</p><input class="info" type="text" id="email" name="email" placeholder="fakedev@gmail.com" required></div>
+                <div class="place"><p>Password</p><input class="info" type="password" id="pass" name="password" placeholder="tbmY2nPfj" required></div>
+                <div class="place"><p>Confirm Password</p><input class="info" type="password" id="pass" name="confirm password" placeholder="tbmY2nPfj" required></div>
+
             </div>
+            <div class="place_btn"><input class="btn" type="submit" value="Sign in" ></div>
+
         </div>
 
     </div>
