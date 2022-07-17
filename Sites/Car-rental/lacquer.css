@@ -90,19 +90,11 @@ div.nav ul li a{
 }
 
 
-div.nav button{
-    margin:30px;
-    padding: 15px 20px;
-    cursor: pointer;
-    outline: none;
-    font-size: 1.1rem;
-    color:white;
-    background-color: rgb(10, 168, 220);
-    border: none
+
+
+div.nav ul li a:hover {
+    color: rgb(39, 190, 220);
 }
-
-
-
 
 
 /* End Header */
@@ -112,7 +104,7 @@ div.nav button{
 
 
 div.middle {
-    height: 88%;
+    height: 86%;
     min-width: 100%;
     background-image: url(car.jpg);
     background-repeat: no-repeat;
@@ -140,7 +132,7 @@ div.block {
     width: 400px;
     height: 400px;
     align-items:flex-start;
-    margin-left:30px
+    margin-left:100px
 }
 
 
@@ -160,19 +152,16 @@ div.content_2 {
     
 }
 
-div.block button{
-    margin:10px;
-    padding: 15px 20px;
-    cursor: pointer;
-    outline: none;
-    font-size: 1.1rem;
-    color:white;
-    background-color: rgb(10, 168, 220);
-    border: none
-}
 
+
+/* End Mid */
+
+
+
+/* Footer */
 .footer {
-    height:50px;
+    
+    height:70px;
     color: white;
 }
 
@@ -190,11 +179,62 @@ div.block button{
     flex-direction:column;
 }
 
-/* End Mid */
+.top {
+    font-size: 1.3rem;
+    color:rgb(18, 216, 234);
+    font-weight: bold;
 
-
-
-/* Footer */
-
+}
 
 /* End Footer */
+
+
+div.nav button ,div.block button {
+    margin:30px;
+    padding: 15px 20px;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.1rem;
+    color:white;
+    background-color: rgb(10, 168, 220);
+    border: none;
+    border-radius: 0.3em;
+}
+
+
+div.nav button:hover ,div.block button:hover{
+    transform: scale(1.1);
+    background-color: rgb(9, 109, 231)
+}
+
+
+@media (max-width: 1200px){
+
+
+    div.nav ul li  {
+        display:flex;
+        align-items: center;
+        margin: 0 20px;
+        font-size:1.1rem;
+        
+    }
+
+    .mark {
+        font-size:1.7rem;
+    }
+
+    div.content_1 {
+        
+        font-size: 2.4rem;
+        
+    }
+    
+    
+    div.content_2 {
+        
+        font-size: 1.5rem;
+        
+        
+    }
+
+    }  
