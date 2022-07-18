@@ -224,6 +224,7 @@ a  {
 .teaser {
     height: 150px;
     width: 200px;
+    border-radius: 40px 0px 40px 0px;
 }
 
 .rect:hover{

@@ -5,8 +5,8 @@
 }
 
 
-html {
-    font-size: 62.5%;
+html{
+    font-size:102.5%;
 }
 
 
@@ -19,7 +19,7 @@ body{
     width: 100%;
     height: auto;
     color: #A91079;
-    font-size:2.5rem;
+    font-size:1.8rem;
     
 }
 
@@ -142,7 +142,7 @@ div.proud div:active {
     display: flex;
     width: 180px;
     height: 45px;
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     justify-content:center;
     align-items: center;
     
@@ -152,18 +152,21 @@ div.proud div:active {
 
 .temp-butt-1 {
 background-color:rgb(162, 71, 163);
+border-bottom-left-radius: 50px 20px;
 
 }
 
 .temp-butt-2 {
 
     background-color: rgb(238, 129, 179);
+    
 }
 
 
 .temp-butt-3 {
 
     background-color: rgb(144, 38, 105);
+    border-top-right-radius: 50px 20px;
     
 }
 
@@ -216,8 +219,8 @@ justify-content: flex-start;
     flex-direction:column;
     width:600px;
     height:400px;
-    margin-left: 250px;
-    margin-top: 200px;
+    margin-left: 22rem;
+    margin-top: 17rem;
 
 }
 
@@ -228,41 +231,55 @@ div.middle-container button {
 margin: 10px;
 outline: none;
 border: none;
-border-radius: 999px;
-color: rgb(255, 249, 215);
+/* border-radius: 999px; */
+color: rgb(233, 231, 225);
 cursor: pointer;
+font-family:monospace;
+
 
 }
 
 div.middle-container button:hover {
 
-    color: rgb(219, 55, 115);
+    color: rgb(219, 57, 116);
 }
 
 
 div.middle-container button.content_1 {
-    background-color: rgb(144, 38, 105);
+    background-image: linear-gradient(143deg, rgba(144, 38, 105, 1) 21%, rgba(59, 13, 152, 1) 100%);
+
     font-size:2.2rem;
     padding:0.7em 1.7em;
+   
 }
 
 div.middle-container button.content_2 {
-    background-color:rgb(162, 71, 163);
+    background-image: linear-gradient(143deg, rgba(162, 71, 163, 1) 21%, rgba(194, 77, 255, 1) 100%);
+
     font-size:2rem;
     padding:0.6em 1.5em;
 }
 
 div.middle-container button.content_3 {
-    background-color: rgb(238, 129, 179);
+    background-image: linear-gradient(143deg, rgba(238, 129, 179, 1) 21%, rgba(194, 77, 255, 1) 100%);
+
     font-size:1.8rem;
     padding:0.5em 1.3em;
 }
 
 
+button{
+    box-shadow: -1px 10px 10px -5px rgba(77, 34, 113, 1);
+
+}
+
 button:hover{
 
     transform: scale(1.1);
+    border:none;
+    outline: none;
 
 }
 
 /* End Mid */
+
