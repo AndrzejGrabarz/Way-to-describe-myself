@@ -14,6 +14,10 @@ body{
 
     background-image: url(/Sites/Image/burgir.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
     color: #A91079;
     font-size:2.5rem;
     
@@ -75,18 +79,49 @@ div.proud img {
 }
 
 
-div.proud img:active  {
-    animation-name: spin;
-    animation-duration: 200ms;
-    animation-iteration-count: infinite;
+div.proud img:active {
+    animation:spin;
+    animation-duration: 300ms;
     animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+div.proud div:active {
+    animation:walk;
+    animation-duration: 3000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
     cursor: pointer;
 }
 
 
 @keyframes spin {
-    from {transform:rotate(0deg)}
-    to{transform:rotate(360deg)}
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
+
+
+@keyframes walk{
+    0%{
+        transform:translate(0% , 0%);
+        
+    }
+
+
+
+    50%{
+        transform:translate(400% , 0%);
+        
+    }
+
+    100%{
+        transform:translate(0% , 0%);
+        
+    }
+
+
 }
 
 
@@ -138,6 +173,17 @@ background-color:rgb(162, 71, 163);
     color: rgb(255, 249, 215);
 }
 
+.btn:hover{
+    transform: scale(1.1);
+}
+
+.btn a:hover{
+    color: rgb(234, 10, 193);
+}
+
+
+
+
 
 a{
 text-decoration: none;
@@ -153,8 +199,70 @@ color: #A91079;
 /* Mid */
 
 
+.middle {
+
+display: flex;
+width: 100%;
+height: 100%;
+justify-content: flex-start;
+
+
+}
+
+.middle-container{
+
+
+    display: flex;
+    flex-direction:column;
+    width:600px;
+    height:400px;
+    margin-left: 250px;
+    margin-top: 200px;
+
+}
 
 
 
+div.middle-container button {
+
+margin: 10px;
+outline: none;
+border: none;
+border-radius: 999px;
+color: rgb(255, 249, 215);
+cursor: pointer;
+
+}
+
+div.middle-container button:hover {
+
+    color: rgb(219, 55, 115);
+}
+
+
+div.middle-container button.content_1 {
+    background-color: rgb(144, 38, 105);
+    font-size:2.2rem;
+    padding:0.7em 1.7em;
+}
+
+div.middle-container button.content_2 {
+    background-color:rgb(162, 71, 163);
+    font-size:2rem;
+    padding:0.6em 1.5em;
+}
+
+div.middle-container button.content_3 {
+    background-color: rgb(238, 129, 179);
+    font-size:1.8rem;
+    padding:0.5em 1.3em;
+}
+
+
+button:hover{
+
+    transform: scale(1.1);
+
+}
 
 /* End Mid */
