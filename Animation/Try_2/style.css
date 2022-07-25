@@ -1,0 +1,26 @@
+
+p{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    margin-top:40px;
+    font-size: 2rem;
+}
+
+button {
+    display:flex;
+    padding:20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+canvas {
+    display:flex;
+    margin-top: 80px;
+    
+
+}
+
